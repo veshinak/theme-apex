@@ -147,19 +147,19 @@
                 <p class="date">{{ post.created_at|format_date }}</p>
               </div>
               <div class="info-right">
-                <p class="read-more"><a href="{{ post.permalink }}">Read More &raquo;</a></p>
+                <p class="read-more"><a href="{{ post.permalink }}">Полностью &raquo;</a></p>
               </div>
             </div>
           </div>
           {% endfor %}
           {% if not is_tag %}
           <div class="pagination span6">
-            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
-            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
+            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; Предыдущие</a>{% endif %}
+            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">Следующие &rarr;</a>{% endif %}
           </div>
           {% endif %}
           {% else %}
-          <h4 class="sub-heading span6">No Posts Yet :(</h4>
+          <h4 class="sub-heading span6">Пока записей нет :(</h4>
           {% endif %}
       </div>
 
@@ -198,7 +198,7 @@
             {% endif %}
           </div>
           <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
+            <p class="back"><a href="/">&laquo; Назад</a></p>
           </div>
           {% if site.disqus %}
           <div class="post-comments">
@@ -226,7 +226,7 @@
             {{ page.content }}
           </div>
           <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
+            <p class="back"><a href="/">&laquo; Назад</a></p>
           </div>
         </div>
       </div>
